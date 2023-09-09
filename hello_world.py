@@ -12,7 +12,7 @@ def hello_world_n_times(n):
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
-        for j in range(0,n-i-1):
+        for j in list(range(0,n-i-1)):
             if(arr[j]>arr[j+1]):
                 arr[j],arr[j+1] = arr[j+1],arr[j]
     return arr
